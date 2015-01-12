@@ -1,0 +1,46 @@
+{
+    "name": "atomify-angular",
+    "version": "1.0.0",
+    "description": "Heeelllo Worrrlllld",
+    "scripts": {
+        "help" : "atomify --help",
+        "bundle": "atomify -j [ scripts/index.js -o scripts/_dist/index.js ] -c [ content/index.css -o content/_dist/index.css ]"
+    },
+    "atomify": {
+        "js": {
+            "entry": "scripts/index.js",
+            "output": "scripts/_dist/index.js"
+        },
+        "css": {
+            "entry": "content/index.css",
+            "output": "content/_dist/index.css"
+        }
+    },
+    "keywords": [
+        "browser",
+        "angular",
+        "browserify",
+        "atomify"
+    ],
+    "author": "Ben Clinkinbeard",
+    "license": "MIT",
+    "dependencies": {
+        "atomify": "^3.1.6",
+        "browserify-shim": "~3.2.2",
+        "handlebars": "^1.3.0",
+        "hbsfy": "^1.3.2",
+        "partialify": "^3.1.1",
+        "resrcify": "^1.0.2"
+    },
+    "browserify": {
+        "transform": [
+            "browserify-shim"
+        ]
+    },
+    "browser": {
+        "angular": "./scripts/vendor/angular.js"
+    },
+    "browserify-shim": {
+        "angular": "global:angular"
+    }
+}

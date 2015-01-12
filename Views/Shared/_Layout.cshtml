@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+    @Scripts.Render("~/Scripts/vendor/angular.js")
+    @Styles.Render("~/Content/_dist/index.css")
+    @Styles.Render("~/Content/font-awesome.min.css")
+    @Scripts.Render("~/Scripts/_dist/index.js")
+</head>
+<body>
+
+    <div class="layout" ng-controller="ParentController">
+
+        <nav class="navbar navbar-default navbar-static-top m0" role="navigation">
+            <div class="navbar-header">
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">IM Admin</a>
+            </div>
+
+            <ul class="nav navbar-top-links navbar-right"></ul>
+            
+            <div class="navbar-default sidebar layout__section--sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <leftnav-component list="pages"></leftnav-component>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+        </nav>
+
+
+        <div class="layout__section--page">
+            @RenderBody()
+        </div>
+    </div>
+
+
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+
+

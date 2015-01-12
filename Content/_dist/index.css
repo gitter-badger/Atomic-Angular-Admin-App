@@ -1,0 +1,59 @@
+/* HELPERS */
+
+.m0 {
+  margin: 0 !important;
+}
+
+body {
+  background-color: #f8f8f8;
+}
+
+.layout {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .layout__section--sidebar {
+    z-index: 1;
+    position: absolute;
+    width: 250px;
+    margin-top: 51px;
+  }
+}
+
+.layout__section--page {
+  background-color: #fff;
+  border-left: 1px solid #e7e7e7;
+  margin: 0 0 0 250px;
+  padding: 0 30px;
+  position: inherit;
+}
+
+h1 {
+  border-bottom: 1px solid #eee;
+  margin: 40px 0 20px;
+  padding-bottom: 9px;
+}
+
+h3 {
+  font-family: Helvetica, sans-serif;
+  color: darkblue;
+}
+
+.leftnav__item {
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.leftnav__item--search {
+  padding: 15px;
+}
+
+.leftnav__link {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+
+.leftnav__link.active {
+  background-color: #eee;
+}

@@ -1,0 +1,6 @@
+node_modules/.bin
+node_modules/a*
+node_modules/b*
+node_modules/h*
+node_modules/nav-component/node_modules
+npm-debug.log
