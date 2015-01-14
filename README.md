@@ -1,6 +1,8 @@
 atomify-example-angular
 =======================
 
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/mdrob001/Atomic-Angular-Admin-App?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Simple demo of using [Atomify](https://github.com/Techwraith/atomify) to create AngularJS components.
 
 The code is all pretty self explanatory, but by inlining the template and controller via `require()`, directives become a great delivery mechanism. With Atomify bundling the CSS and assets as well, you get a fully self contained, portable unit.
